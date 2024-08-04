@@ -10,7 +10,7 @@ Setting up a Virtual Environment
 
     pyenv versions
 
-    echo '.env '  >> .gitignore
+    echo '.env ' >> .gitignore
     echo '.venv' >> .gitignore
 
     pyenv local 3.12.1
@@ -45,6 +45,7 @@ Deactivate the virtual environment
     deactivate
 
 Reference
+- 암호화폐 자동매매를 위한 파이썬과 CCXT : [Link](https://wikidocs.net/book/8616)
 - 코인 자동매매 by 장도강 : [Youtube](https://www.youtube.com/watch?v=ktnZeL-gWw4), [Blog](https://velog.io/@jack_intheboxx/autotradingbasic2)
 - 회계사가 직접 만든 자동매매 by 야근하는 회계사 : [Youtube](https://www.youtube.com/watch?v=jgdriEmharc)
 - Tradingview : [Link](https://kr.tradingview.com/pricing/)

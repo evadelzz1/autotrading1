@@ -6,15 +6,21 @@ import time
 def line_delimiter(_line_number=100):
     print("=" * _line_number)
 
-myUpbitBot = UpbitBot(upbit)
+def get_myAsset(_myUpbitBot):
+    line_delimiter()
+    print("####### My Assets #######")
+    line_delimiter(50)
+    _myUpbitBot.get_balances()
+    line_delimiter()
+    
 
-line_delimiter()
-print("####### My Assets #######")
-line_delimiter(50)
-myUpbitBot.get_balances()
-line_delimiter()
+myUpbitBot = UpbitBot(upbit)
+get_myAsset(myUpbitBot)
 
 ticker = "BTT/KRW"
+print(f"Ticker : {ticker}")
+
+sleepTime = 3
 
 while True:
     try:
@@ -30,4 +36,4 @@ while True:
         print(e)
         exit(1)
 
-    time.sleep(3)
+    time.sleep(sleepTime)
